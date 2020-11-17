@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .slider {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 15px;
+            border-radius: 5px;
+            background: #d3d3d3;
+            outline: none;
+            opacity: 0.7;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="traitement.html" methode="get">
+        <fieldset>
+            <legend><em>Client</em></legend>
+            Nom et Prenom: <input type="name" placeholder="Nom et prénom" pattern="[A-F]{40}"><br>
+            Adresse: <input type="adresse" placeholder="" pattern="[A-F][0-9]{165}"><br>
+            Code Postal : <input type="postal" placeholder="" pattern="[0-9]{5}"><br>
+            Pays: <input type="pays" placeholder="France" pattern="[A-F]{40}"><br>
+        </fieldset>
+        <fieldset>
+            <legend><em>Commande</em></legend>
+            Modèle: <input type="name" placeholder="Road 66" pattern="[A-F][0-9]{165}"><br>
+            Adresse: <input type="adresse" placeholder="" pattern="[A-F][0-9]{40}"><br>
+            Taille:
+            <input type="range"><br>
+            <p>S M L XL</p>
+            Quantité :<input id="number" type="number" value="1">
+        </fieldset>
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Effacer">
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" methode="get">
+
+        <fieldset>
+            <legend><em>Authentification</em></legend>
+            <label for=""> Nom : </label>
+            <input type="Name=nom" placeholder="Nom" pattern="[A-F]{10}"><br>
+
+            <label for=""> Prénom : </label>
+            <input type="Name=prenom" placeholder="Nom" pattern="[A-F]{10}"><br>
+
+            <label for=""> Mail: </label>
+            <input type="email" id="email" pattern=".+@globex.com" size="30" required><br>
+
+            <label for=""> Sexe :</label>
+            <input type="radio" name="sexe">
+            Masculin
+            <input type="radio" name="sexe">
+            Féminin
+            <br>
+            Photo : <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+            <br>
+            <p>Pays <select name="langage" size="4" multiple style= "width: 60px;">
+                    <option value="france" selected>France</option>
+                    <option value="ethiopie">Éthiopie</option>
+                    <option value="fidji">Fidji</option>
+                    <option value="finlande">Finlande</option>
+
+                    <option value="gabon">Gabon</option>
+                    <option value="gambie">Gambie</option>
+                    <option value="georgie">Géorgie</option>
+                    <option value="georgie-du-sud-et-les-iles-sandwich-du-sud">Géorgie du Sud-et-les Îles Sandwich du
+                        Sud</option>
+                    <option value="ghana">Ghana</option>
+                    <option value="gibraltar">Gibraltar</option>
+                    <option value="grece">Grèce</option>
+                    <option value="grenade">Grenade</option>
+                    <option value="groenland">Groenland</option>
+                    <option value="guadeloupe">Guadeloupe</option>
+                    <option value="guam">Guam</option>
+                    <option value="guatemala">Guatemala</option>
+                    <input type="Submit">
+                </select></p>
+            <label for="">Les langues préferés</label>
+            <select name="cars" id="cars" multiple>
+                <option value="Java">Java</option>
+                <option value="C">C</option>
+                <option value="C++">C++</option>
+                <option value="PHP">PHP</option>
+            </select>
+            <label for=""> (Pour faire plusieurs choix maintenir la touche CTRL enfoncée)</label>
+            <br>
+            <label for=""> Domaines d'activités </label>
+            <input type="radio" name="activity" value= "dev" id="domaine">
+            Développement
+            <input type="radio" name="activity" value= "gprojet">
+            Gestion Projet
+            <input type="radio" name="activity"value= "Base de données">
+            Bases de données
+            <br>
+            <input type="submit" value="Envoyer">
+            <input type="reset" value="Annuler">
+        </fieldset>
+
+    </form>
+</body>
+
+</html>

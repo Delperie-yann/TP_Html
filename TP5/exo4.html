@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:required {
+            border-color: #800000;
+           
+        }
+
+        input:required:valid {
+            border-color: #008000;
+        }
+
+        input:invalid {
+            background-color: #ffdddd;
+        }
+
+        input:valid {
+            background-color: #ddffdd;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" methode="get">
+
+        <fieldset>
+            <legend><em>Authentification</em></legend>
+            <label for="username">Login:</label>
+            <input type="text" id="username" name="username" pattern="([a-z]{2})+(@needemand.com)"
+                placeholder="saisir votre login" required>
+
+
+
+            <label for="pass"> Mot de passe</label>
+            <input type="password" id="pass" name="password" minlength="6" maxlength="8" required
+                placeholder="saisir votre mot de passe">
+
+            <br>
+            <input type="submit" value="Envoyer">
+            <input type="reset" value="Effacer">
+
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
